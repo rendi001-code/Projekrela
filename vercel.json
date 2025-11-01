@@ -1,0 +1,39 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "server.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/server.js"
+        }
+    ],
+    "functions": {
+        "api/messages": {
+            "memory": 512,
+            "maxDuration": 10
+        },
+        "api/register": {
+            "memory": 512,
+            "maxDuration": 10
+        },
+        "api/login": {
+            "memory": 512,
+            "maxDuration": 10
+        },
+        "api/send-message": {
+            "memory": 512,
+            "maxDuration": 10,
+            "maxFileSize": "10mb"
+        },
+        "api/ask-rela-ai": {
+            "memory": 512,
+            "maxDuration": 10
+        }
+    },
+    "sendNow": true
+}
