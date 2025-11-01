@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rela AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rela AI</h1>
+        <div id="authForms">
+            <div id="registerForm">
+                <h2>Daftar</h2>
+                <input type="email" id="registerEmail" placeholder="Email">
+                <input type="password" id="registerPassword" placeholder="Password">
+                <button id="registerBtn">Daftar</button>
+                <p id="registerMessage"></p>
+            </div>
+            <div id="loginForm">
+                <h2>Login</h2>
+                <input type="email" id="loginEmail" placeholder="Email">
+                <input type="password" id="loginPassword" placeholder="Password">
+                <button id="loginBtn">Login</button>
+                <p id="loginMessage"></p>
+            </div>
+        </div>
+        <div id="chatContainer" style="display: none;">
+            <div id="messages"></div>
+            <div id="messageForm">
+                <textarea id="messageText" placeholder="Ketik pesan..."></textarea>
+                <input type="file" id="fileInput">
+                <button id="sendMessageBtn">Kirim</button>
+            </div>
+            <div id="contactAdmin">
+                <a href="https://t.me/rendi_102" target="_blank">Hubungi Admin</a>
+            </div>
+            <button id="logoutBtn">Logout</button>
+        </div>
+        <div id="aiSection">
+            <h2>Rela AI</h2>
+            <textarea id="aiPrompt" placeholder="Tanyakan sesuatu pada Rela AI"></textarea>
+            <button id="askAiBtn">Tanya Rela AI</button>
+            <div id="aiResponse"></div>
+            <button id="shareResponseBtn">Share to WhatsApp</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
