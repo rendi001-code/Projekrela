@@ -1,0 +1,20 @@
+{
+    "name": "rela-ai",
+    "version": "1.0.0",
+    "description": "Website Rela AI dengan fitur pendaftaran/login dan kirim pesan",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "bcrypt": "^5.0.0",
+        "cors": "^2.8.5",
+        "dotenv": "^16.0.0",
+        "express": "^4.18.0",
+        "express-rate-limit": "^6.7.0",
+        "helmet": "^6.0.0",
+        "multer": "^1.4.5-lts.1",
+        "openai": "^3.2.1",
+        "uuid": "^8.3.0"
+    }
+}
